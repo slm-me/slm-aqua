@@ -11,7 +11,8 @@ void setup() // процедура setup
 
 void loop()
 {
-if (now.hour() >= 8 && now.minute() >= 0)
+  DateTime now = RTC.now();
+  if (now.hour() >= 8 && now.minute() >= 0)
 {
  for(int i=0;i<=255;i++)
 {
